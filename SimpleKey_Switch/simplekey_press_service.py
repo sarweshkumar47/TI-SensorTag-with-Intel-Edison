@@ -32,7 +32,7 @@ def main():
     	tool.expect('Connection successful')
     	if(debug == True): print "\nConnection suceesful"
 	device_connected = True
-    	tool.sendline('char-write-cmd 0x60 0100')
+    	tool.sendline('char-write-cmd 0x60 0100')  # 0x60 - depends on sensorTag version, please check the userguide properly
     	if(debug == True): print "\nSimple Key Service is On"
  
         it = iter(tool)
