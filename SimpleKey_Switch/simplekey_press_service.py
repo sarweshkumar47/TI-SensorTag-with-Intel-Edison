@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import pexpect
 import time
+import sys
 
 debug = True                                                            
 bluetooth_addr = sys.argv[1] 
