@@ -21,3 +21,5 @@ To install Bluez software package on Intel Edison, please follow [this post.](ht
 ## Reference
 * [https://github.com/msaunby/ble-sensor-pi](https://github.com/msaunby/ble-sensor-pi)
 * [https://software.intel.com/en-us/articles/intel-edison-board-getting-started-with-bluetooth](https://software.intel.com/en-us/articles/intel-edison-board-getting-started-with-bluetooth)
+* [http://processors.wiki.ti.com/images/archive/a/a8/20140521115217!BLE_SensorTag_GATT_Server.pdf](http://processors.wiki.ti.com/images/archive/a/a8/20140521115217!BLE_SensorTag_GATT_Server.pdf)
+* [http://processors.wiki.ti.com/index.php/SensorTag_User_Guide](http://processors.wiki.ti.com/index.php/SensorTag_User_Guide)
