@@ -18,6 +18,6 @@ The TI SensorTag, along with many other Bluetooth devices, uses the Generic Attr
 
 To install Bluez software package on Intel Edison, please follow [this post.](https://software.intel.com/en-us/articles/using-the-generic-attribute-profile-gatt-in-bluetooth-low-energy-with-your-intel-edison)
 
-## References
+## Reference
 * [https://github.com/msaunby/ble-sensor-pi](https://github.com/msaunby/ble-sensor-pi)
 * [https://software.intel.com/en-us/articles/intel-edison-board-getting-started-with-bluetooth](https://software.intel.com/en-us/articles/intel-edison-board-getting-started-with-bluetooth)
