@@ -12,7 +12,7 @@ The Simple Key service is used to enable notifications for key hits on the senso
 
 |handle(hex)|Type (hex)|   Type (#DEFINE)    | Notes      |
 |-----------|----------|---------------------|-----------------------|------------|
-|  0x60     |  0x2902  |GATT_CLIENT_CHAR_CFG_UUID|Write "01:00" to enable notifications, "00:00" to disable
+|  0x60     |  0x2902  |GATT_CLIENT_CHAR_CFG_UUID|Write "0100" to enable notifications, "0000" to disable
 
 ##Led Control from SensorTag
 Run the python program and give mac addess of sensortag as an argument
