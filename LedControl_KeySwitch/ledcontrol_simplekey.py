@@ -2,6 +2,7 @@
 import pexpect
 import sys
 import time
+import mraa
 
 debug = True                                                            
 bluetooth_addr = sys.argv[1] 
@@ -36,7 +37,9 @@ def main():
     	child.sendline('char-write-cmd 0x60 0100')
     	if(debug == True): print "\nSimple Key Service is On"
     	child.expect('\[LE\]>')
- 
+	led = mraa.Gpio(13)
+	led.dir(mraa.DIR_OUT) 
+	ledstatus = False
         it = iter(child)
         next(it, None)  # skip first item.
 	if(debug == True): print "\nWaiting for the keypress event"
@@ -44,46 +47,65 @@ def main():
 	    item = elem.split()[6]
 #           print (item)
 	    if(item == '01'):
-		print "\n> Right Key Pressed"
+#		print "\nRight Key Pressed"
+		if (ledstatus == False):
+		    ledstatus = True
+		    led.write(1)
+		    print "\n> led on"
+		else:
+		    print "\n> led is already in on state"
 	    elif(item == '02'):
-		print "\n> Left Key Pressed"
+#		print "\nLeft Key Pressed"
+		if (ledstatus == True):
+		    ledstatus = False
+                    led.write(0)
+		    print "\n> led off"
+		else:
+		    print "\n> led is already in off state"		    
 	    elif(item == '03'):
-		print "\n> Left Key and Right Key, both pressed"
+#		print "\nLeft Key and Right Key, both pressed"
+		if (ledstatus == True):
+		    ledstatus = False
+		    led.write(0)
+		    print "\n> led off"
+		else:
+		    print "\n> led is already in off state"
 	    else:
-		print "\n> Off"
+#		print "\nOff"
+		pass
 
     except pexpect.TIMEOUT:
 	print "\nTimeout."
 	if(device_connected == False):
 	    print "No devices found"
-	    if(child.isalive()):                                                 
-                child.close()                                                    
-		if(child.terminate(True)):
+            if (child.isalive()):                                                    
+                child.close()     
+                if(child.terminate(True)):
 		    print "Successfully terminated."
-            print "End."
+	    print "End."
 	else:
 	    print "No Key Event in ", TIMEOUT, " secs, Exited"
-	    if(child.isalive()):
+	    if (child.isalive()):                                                    
                 child.sendline('char-write-cmd 0x60 0000')                           
-		child.close()
-		if(child.terminate(True)):
+                child.close()                                                        
+                if(child.terminate(True)):
 		    print "Successfully terminated."
-            print "End."
+	    print "End."
     except KeyboardInterrupt:
         print "\nKeyboard Interrupt detected."
-	if(child.isalive()):
-        	child.sendline('char-write-cmd 0x60 0000')
-	        child.close()
-		if(child.terminate(True)):
-		    print "Successfully terminated."
+	if (child.isalive()):
+            child.sendline('char-write-cmd 0x60 0000')
+            child.close()
+	    if(child.terminate(True)):
+		print "Successfullt terminated."
         print "End."
     except:
         print "\nGeneral Exception."
-        if(child.isalive()):
-        	child.sendline('char-write-cmd 0x60 0000') 
-        	child.close()
-		if(child.terminate(True)):
-		    print "Successfully terminated."
+	if (child.isalive()):
+            child.sendline('char-write-cmd 0x60 0000') 
+            child.close()
+	    if(child.terminate()):
+		print "Successfully terminated."
         print "End."    
 
 if __name__=='__main__':
