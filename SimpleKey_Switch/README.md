@@ -21,6 +21,7 @@ The Simple Key service is used to enable notifications for key hits on the senso
 |--------|-------|--------------------|--------|
 | Data   |	FFE1 |  Notification Only |	Bit 2: side key, Bit 1- Left key, Bit 0 – Right key |
 
+The SensorTag can be configured to send notifications for every sensor by writing “01 00” to the characteristic configuration < GATT_CLIENT_CHAR_CFG_UUID> for the corresponding sensor data, the data is then sent as soon as the data has been updated.
 
 ##Get Key Pressed Notifications
 Run the python program and give mac addess of the sensortag as an argument
