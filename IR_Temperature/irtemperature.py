@@ -28,7 +28,7 @@ def main():
     if(debug == True): print "5 secs is over"
 
     child = pexpect.spawn('gatttool -b ' + bluetooth_addr + ' -I')
-    if(debug == True): print "\nInitiating coonection to sensor tag using gatttool"
+    if(debug == True): print "\nInitiating connection to sensor tag using gatttool"
     device_connected = False    
     try:
 	child.timeout = TIMEOUT
