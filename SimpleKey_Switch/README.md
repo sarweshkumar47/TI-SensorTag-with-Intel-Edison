@@ -12,7 +12,7 @@ The Simple Key service is used to enable notifications for key hits on the senso
 
 |handle(hex)|Type (hex)|   Type (#DEFINE)    |GATT Server Permissions| Notes      |
 |-----------|----------|---------------------|-----------------------|------------|
-|  0x60     |  0x2902  |GATT_CLIENT_CHAR_CFG_UUID|GATT_PERMIT_READ or GATT_PERMIT_WRITE |Write "01:00" to enable notifications, "00:00" to disable
+|  0x60     |  0x2902  |GATT_CLIENT_CHAR_CFG_UUID|GATT_PERMIT_READ or GATT_PERMIT_WRITE |Write "0100" to enable notifications, "0000" to disable
 
 
 **Simple Key Service**
