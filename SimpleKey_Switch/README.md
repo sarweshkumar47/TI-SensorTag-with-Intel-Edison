@@ -23,7 +23,7 @@ The Simple Key service is used to enable notifications for key hits on the senso
 
 
 ##Get Key Pressed Notifications
-Run the python program and give mac addess of sensortag as an argument
+Run the python program and give mac addess of the sensortag as an argument
 
       python simplekey_press_service.py 78:xx:xx:xx:xx:B6
 
