@@ -107,8 +107,7 @@ def main():
 
 # This algorithm borrowed from 
 # http://processors.wiki.ti.com/index.php/SensorTag_User_Guide#Gatt_Server
-# which most likely took it from the datasheet.  I've not checked it, other
-# than noted that the temperature values I got seemed reasonable.
+# I've not tested it
 #
 def calcTmpTarget(objT, ambT):
     m_tmpAmb = ambT/128.0
