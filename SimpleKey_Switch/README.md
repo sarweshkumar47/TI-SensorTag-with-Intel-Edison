@@ -17,9 +17,9 @@ The Simple Key service is used to enable notifications for key hits on the senso
 
 **Simple Key Service**
 
-|Type 	 |UUID 	 |   Notify 	        |  Format|
+|Type    |UUID   |   Notify 	        |  Format|
 |--------|-------|--------------------|--------|
-| Data   |	FFE1 |	Notification Only |	Bit 2: side key, Bit 1- Left key, Bit 0 – Right key |
+| Data   |	FFE1 |  Notification Only |	Bit 2: side key, Bit 1- Left key, Bit 0 – Right key |
 
 
 ##Get Key Pressed Notifications
