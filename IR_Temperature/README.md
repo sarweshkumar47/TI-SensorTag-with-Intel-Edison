@@ -13,7 +13,7 @@ __Sensor Overview__
 
 __IR Temperature Sensor__
 
-Texas Instruments TMP006, two types of data are obtained from the IR Temperature sensor: object temperature and ambient temperature. 
+Two types of data are obtained from the IR Temperature sensor TMP006: object temperature and ambient temperature. 
 
 | Type   | UUID  | Handle | Type (#DEFINE) | Format | Notes |
 |--------|-------|--------|----------------|--------|-------|
