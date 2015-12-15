@@ -7,6 +7,7 @@ import mraa
 debug = True                                                            
 bluetooth_addr = sys.argv[1] 
 TIMEOUT = 15
+GPIOPIN = 13
 
 def countdown(t):
     while t:
@@ -37,7 +38,7 @@ def main():
     	child.sendline('char-write-cmd 0x60 0100')
     	if(debug == True): print "\nSimple Key Service is On"
     	child.expect('\[LE\]>')
-	led = mraa.Gpio(13)
+	led = mraa.Gpio(GPIOPIN)
 	led.dir(mraa.DIR_OUT) 
 	ledstatus = False
         it = iter(child)
