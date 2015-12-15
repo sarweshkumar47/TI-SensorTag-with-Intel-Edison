@@ -1,4 +1,19 @@
 #! /bin/bash
+abort()
+{
+    echo >&2 '
+***************
+*** ABORTED ***
+***************
+'
+    echo "An error occurred. Exiting..." >&2
+    exit 1
+}
+
+trap 'abort' 0
+
+set -e
+###############################################################################
 echo "------------------------------------------------------------------------"
 echo "Configuration started......"
 echo "Please run this script only once, after that delete it"
@@ -28,5 +43,12 @@ opkg install python-pip
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py --no-check-certificate -O - | python
 # Install pexpect
 pip install pexpect
-echo "done."
+##############################################################################
+trap : 0
+
+echo >&2 '
+************
+*** DONE *** 
+************
+'
 echo "Complete."
