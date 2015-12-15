@@ -10,7 +10,7 @@ wget https://www.kernel.org/pub/linux/bluetooth/bluez-5.36.tar.gz - no-check-cer
 tar -xvf bluez-5.36.tar.gz
 rm bluez-5.36.tar.gz
 cd bluez-5.36
-./configure --disable-systemd -disable-udev
+./configure --disable-systemd --disable-udev
 make
 make install
 # To be able to launch gatttool from anywhere add it to the path
