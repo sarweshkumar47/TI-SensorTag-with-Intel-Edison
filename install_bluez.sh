@@ -21,7 +21,7 @@ cd ~
 # Gatttool is a standard tool included in the BlueZ software package,
 # but it is not installed on the Intel Edison board by default. 
 # To install it, download BlueZ 5.36 (latest) source code and compile 
-wget https://www.kernel.org/pub/linux/bluetooth/bluez-5.36.tar.gz - no-check-certificate
+wget https://www.kernel.org/pub/linux/bluetooth/bluez-5.36.tar.gz --no-check-certificate
 tar -xvf bluez-5.36.tar.gz
 rm bluez-5.36.tar.gz
 cd bluez-5.36
