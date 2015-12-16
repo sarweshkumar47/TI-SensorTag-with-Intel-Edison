@@ -1,4 +1,4 @@
-#Accelerometer from SensorTag
+#Accelerometer in SensorTag
 
 SensorTag has Accelerometer, can measure acceleration in 3 axis with programmable resolution up to 14 bit.
 
