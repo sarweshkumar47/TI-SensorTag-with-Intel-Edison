@@ -1,4 +1,4 @@
-#IR Temperature from SensorTag
+#IR Temperature Sensor in SensorTag
 
 SensorTag has IR Temerature sensor, can measure both object and ambient temperature.
 
