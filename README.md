@@ -5,7 +5,7 @@ The [TI SensorTag](http://www.ti.com/tool/cc2541dk-sensor) is a portable low-pow
 
 Intel Edison has built-in Bluetooth, so no need of external USB Bluetooth dongle.
 
-The python scripts that interface with the Intel Edison were gently modified from _[msaunby's Raspberry Pi Scripts.](https://github.com/msaunby/ble-sensor-pi)_
+The python scripts that interface with the Intel Edison are gently modified from _[msaunby's Raspberry Pi Scripts.](https://github.com/msaunby/ble-sensor-pi)_
 
 ##Hardware
 * Intel Edison
