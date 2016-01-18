@@ -12,7 +12,7 @@ The python scripts that interface with the Intel Edison are gently modified from
 * TI SensorTag
 
 ##Software
-* BlueZ software package on Intel Edison
+* BlueZ software package
 
 The TI SensorTag, along with many other Bluetooth devices, uses the Generic Attribute Profile (GATT) to interface with your computer and other devices. Gatttool is a standard tool included in the BlueZ software package, but it is not installed on the Intel Edison board by default.
 
