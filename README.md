@@ -9,7 +9,7 @@ The python scripts that interface with the Intel Edison are gently modified from
 
 ##Hardware
 * [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html)
-* TI SensorTag
+* [TI SensorTag](http://www.ti.com/tool/cc2541dk-sensor)
 
 ##Software
 * BlueZ software package
