@@ -40,7 +40,7 @@ echo "src/gz core2-32 http://repo.opkg.net/edison/repo/core2-32" >> /etc/opkg/ba
 opkg update
 opkg install python-pip
 # Install setup-tools for Pip
-wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py --no-check-certificate -O - | python
+wget https://bootstrap.pypa.io/ez_setup.py --no-check-certificate -O - | python
 # Install pexpect
 pip install pexpect
 ##############################################################################
