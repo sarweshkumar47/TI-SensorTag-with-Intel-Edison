@@ -42,7 +42,8 @@ opkg install python-pip
 # Install setup-tools for Pip
 wget https://bootstrap.pypa.io/ez_setup.py --no-check-certificate -O - | python
 # Install pexpect
-pip install pexpect
+#pip install pexpect
+easy_install pexpect
 ##############################################################################
 trap : 0
 
