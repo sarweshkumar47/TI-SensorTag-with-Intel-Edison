@@ -1,4 +1,4 @@
-#Accelerometer in SensorTag
+# Accelerometer in SensorTag
 
 SensorTag has Accelerometer, can measure acceleration in 3 axis with programmable resolution up to 14 bit.
 
@@ -26,7 +26,7 @@ When the enable command is issued, the sensor starts to perform measurements eac
 
 The SensorTag can be configured to send notifications for every sensor by writing “01 00” to the characteristic configuration < GATT_CLIENT_CHAR_CFG_UUID> for the corresponding sensor data, the data is then sent as soon as the data has been updated. The sensors are enabled by writing 0x01 (NB: Gyroscope has a different code) to the corresponding Configuration and then disabled by writing 0x00
 
-##Get Accelerometer values from SensorTag
+## Get Accelerometer values from SensorTag
 Run the python program and give mac addess of the sensortag as an argument
 
      python accelerometer.py 78:xx:xx:xx:xx:B6
