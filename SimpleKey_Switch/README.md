@@ -1,4 +1,4 @@
-##Simple Key Notification from SensorTag
+## Simple Key Notification from SensorTag
 
 SensorTag 2561 has two key switches (except the side one). Pressing of these keys generate key events. This program
 enables Simple Key Service (UUID: FFE1) and whenver right/left key is pressed, receives notification from SensorTag
@@ -23,7 +23,7 @@ The Simple Key service is used to enable notifications for key hits on the senso
 
 The SensorTag can be configured to send notifications for every sensor by writing “01 00” to the characteristic configuration < GATT_CLIENT_CHAR_CFG_UUID> for the corresponding sensor data, the data is then sent as soon as the data has been updated.
 
-##Get Key Pressed Notifications
+## Get Key Pressed Notifications
 Run the python program and give mac addess of the sensortag as an argument
 
       python simplekey_press_service.py 78:xx:xx:xx:xx:B6
