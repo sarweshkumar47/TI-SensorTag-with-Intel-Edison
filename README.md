@@ -7,11 +7,11 @@ Intel Edison has built-in Bluetooth, so no need of external USB Bluetooth dongle
 
 The python scripts that interface with the Intel Edison are gently modified from _[msaunby's Raspberry Pi Scripts.](https://github.com/msaunby/ble-sensor-pi)_
 
-##Hardware
+## Hardware
 * [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html)
 * [TI SensorTag](http://www.ti.com/tool/cc2541dk-sensor)
 
-##Software
+## Software
 * BlueZ software package
 
 The TI SensorTag, along with many other Bluetooth devices, uses the Generic Attribute Profile (GATT) to interface with your computer and other devices. Gatttool is a standard tool included in the BlueZ software package, but it is not installed on the Intel Edison board by default.
